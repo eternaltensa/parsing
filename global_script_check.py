@@ -8,22 +8,9 @@ chrome_options.add_argument('--headless')
 driver = webdriver.Chrome(options=chrome_options)
 sites=[
 
-"https://sales-inquiries.ae/axcapital/damac-lagoons-morocco/",
-"https://sales-inquiries.ae/axcapital/damac-lagoons-morocco/ru",
-"https://sales-inquiries.ae/axcapital/julphar-residence/",
-"https://sales-inquiries.ae/axcapital/julphar-residence/ru",
-"https://sales-inquiries.ae/axcapital/oasis/",
-"https://sales-inquiries.ae/axcapital/oasis/ru",
-"https://sales-inquiries.ae/axcapital/the-source-2/",
-"https://sales-inquiries.ae/axcapital/the-source-2/ru",
-"https://sales-inquiries.ae/axcapital/sunridge/",
-"https://sales-inquiries.ae/axcapital/sunridge/ru",
-"https://sales-inquiries.ae/axcapital/rivana/",
-"https://sales-inquiries.ae/axcapital/rivana/ru",
-"https://sales-inquiries.ae/axcapital/rixos-by-nakheel/",
-"https://damac-bay-2.ae/",
-"https://district-west-villas.ae/",
-"https://palace-residences-north.ae/"
+"link1",
+"link2",
+"link3"
 
 
 
@@ -32,7 +19,7 @@ for site in sites:
 
         driver.get(site)
         try:
-            script= driver.find_element(By.CSS_SELECTOR,'[src="https://fnst.axflare.com/landings/global-script/landings-global-script.js"]')
+            script= driver.find_element(By.CSS_SELECTOR,'[src=""]')
             print(f'{site}     OK')
         except:
             print(f'{site}')
